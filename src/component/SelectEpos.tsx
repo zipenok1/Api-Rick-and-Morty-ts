@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useEpisodeContext } from '../context/EpisodesContent';
 
 function SelectEpos() {
-  const { filtersEpi, setFiltersEpi } = useCharacterContext();
+  const { filtersEpi, setFiltersEpi } = useEpisodeContext();
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFiltersEpi(prev => ({ ...prev, searchTerm: e.target.value }));

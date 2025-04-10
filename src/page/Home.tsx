@@ -12,7 +12,6 @@ function Home() {
           className="w-full max-w-96" 
         />
       </div>
-
         <SelectForm />
         <Cards />
       

@@ -1,19 +1,19 @@
 import { FC } from 'react';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useEpisodeContext } from '../context/EpisodesContent';
 import EpisAitem from './EpisAitem';
 
 const CardsEpos: FC = () => {
-  const { setCounterEpi, counterEpi, allLocalLoaded, filteredEpisode } = useCharacterContext();
+  const { setCounterEpi, counterEpi, allEpiLoaded, filteredEpisodes } = useEpisodeContext();
   
   return (
     <>
       <div className='flex flex-wrap gap-5 py-10 justify-center container mx-auto px-50'>
-        {filteredEpisode.slice(0, counterEpi).map(el =>
+        {filteredEpisodes.slice(0, counterEpi).map(el =>
            <EpisAitem key={el.id} epis={el} />
         )}
       </div>
         
-      {!allLocalLoaded && filteredEpisode.length > 0 && (
+      {!allEpiLoaded && filteredEpisodes.length > 0 && (
         <div className='container mx-auto px-50 flex justify-center pb-24 pt-8'>
         <button 
           onClick={() => setCounterEpi(prev => prev + 8)} 

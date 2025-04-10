@@ -7,8 +7,7 @@ import LocationsDetail from './page/LocationsDetail'
 import {HOME_ROUTE, LOCATION_ROUTER, EPISODES_ROUTER, CHARACTERDET_ROUTER, LOCATIONDET_ROUTER, EPISODESDET_ROUTER} from './utils/const'
 
 
-
-export const publicRoutes = [
+export const characterRoutes = [
     {
         path: HOME_ROUTE,
         Component: Home
@@ -17,10 +16,19 @@ export const publicRoutes = [
         path: CHARACTERDET_ROUTER,
         Component: CharacterDetail
     },
+]
+export const localRoutes = [
     {
         path: LOCATION_ROUTER,
         Component: Locations
     },
+    {
+        path: LOCATIONDET_ROUTER,
+        Component: LocationsDetail
+    },
+]
+
+export const EpisodeRoutes = [
     {
         path: EPISODES_ROUTER,
         Component: Episodes
@@ -28,10 +36,5 @@ export const publicRoutes = [
     {
         path: EPISODESDET_ROUTER,
         Component: EpisodesDetail
-    },
-    {
-        path: LOCATIONDET_ROUTER,
-        Component: LocationsDetail
-    },
-    
+    }, 
 ]

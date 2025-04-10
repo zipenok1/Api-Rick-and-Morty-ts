@@ -1,8 +1,8 @@
 import React from 'react';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useLocationContext } from '../context/LocationContext';
 
 function SelectLocal() {
-  const { filtersLoc, setFiltersLoc } = useCharacterContext();
+  const { filtersLoc, setFiltersLoc } = useLocationContext();
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFiltersLoc(prev => ({ ...prev, searchTerm: e.target.value }));

@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useLocationContext } from '../context/LocationContext';
 import LocalAitem from './LocalAitem';
 
 const CardsLocal: FC = () => {
-  const { setCounterLocal, counterLocal, allLocalLoaded, filteredLocations } = useCharacterContext();
+  const { setCounterLocal, counterLocal, allLocalLoaded, filteredLocations } = useLocationContext();
   
   return (
     <>

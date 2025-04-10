@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useEpisodeContext } from '../context/EpisodesContent';
 
 const EpisodesDetail: FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { episode } = useCharacterContext();
+  const { episodes } = useEpisodeContext();
   const navigate = useNavigate();
 
-  const epis = episode.find(char => char.id === Number(id));
+  const epis = episodes.find(char => char.id === Number(id));
     
   if (!epis) {
     return <div>Character not found</div>

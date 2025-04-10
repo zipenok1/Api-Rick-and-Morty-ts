@@ -19,7 +19,6 @@ const CharacterDetail: FC = () => {
     return <div>Character not found</div>;
   }
 
-  
   const locationId = extractIdFromUrl(character.location?.url);
   console.log(character.episodesData);
   

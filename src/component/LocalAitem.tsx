@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { ILocation } from '../types/types';
 import { useNavigate } from 'react-router-dom';
 

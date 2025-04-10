@@ -22,7 +22,7 @@ function SelectForm() {
 
   return (
     <div className='lg:container mx-auto px-50 md:container'>
-      <form className='flex justify-center gap-5 flex-wrap'>
+      <form className='flex justify-center gap-5 flex-wrap '>
         <div className='w-60 h-14 rounded-xl border-1 p-4 flex items-center gap-2'>
           <img src="img/search.svg" alt="search" />
           <input 

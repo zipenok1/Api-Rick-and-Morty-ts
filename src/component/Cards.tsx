@@ -12,7 +12,7 @@ const Cards: FC = () => {
           <CardsAitem key={el.id} card={el}/>  
         )}
       </div>
-      {!allCardsLoaded && filteredCharacters.length > 0 && (
+        {!allCardsLoaded && filteredCharacters.length > 0 && (
         <div className='container mx-auto px-50 flex justify-center pb-10 pt-4'>
           <button 
             onClick={() => setCounter(prev => prev + 8)} 

@@ -1,12 +1,15 @@
 import {HOME_ROUTE, LOCATION_ROUTER, EPISODES_ROUTER} from '../utils/const'
 import { Link } from "react-router-dom";
+import logo from '../../public/img/logoHeader.svg'
 
 function NavBar() {
   return (
     <div>
         <div className='shadow-lg'>
-            <div className='flex  justify-between items-center p-2.5 container mx-auto px-50 flex-wrap gap-5 ' >
-                <img src="img/logoHeader.svg" alt="logo" />
+            <div className='flex  justify-between items-center p-2.5 container mx-auto px-50 flex-wrap gap-5' >
+                <img 
+                    src={logo} 
+                    alt="logo" />
                 <nav>
                     <ul className='flex gap-5'>
                         <Link to={HOME_ROUTE}>

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useCharacterContext } from '../context/CharacterContext';
+import { useLocationContext } from '../context/LocationContext';
 
 const LocationsDetail: FC = () => {
   const { id } = useParams<{ id: string }>();
-  const { locations } = useCharacterContext();
+  const { locations } = useLocationContext();
   const navigate = useNavigate();
 
 
