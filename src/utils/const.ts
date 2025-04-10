@@ -1,0 +1,6 @@
+export const HOME_ROUTE = '/'
+export const CHARACTERDET_ROUTER = '/character/:id'
+export const LOCATIONDET_ROUTER = '/local/:id'
+export const EPISODESDET_ROUTER = '/epis/:id'
+export const LOCATION_ROUTER = '/locations'
+export const EPISODES_ROUTER = '/episodes'
