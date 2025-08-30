@@ -1,4 +1,3 @@
-import React from 'react'
 import SelectEpos from '../component/SelectEpos'
 import CardsEpos from '../component/CardsEpos'
 
